@@ -29,7 +29,8 @@ var skills = [
     'calculator',
     'device',
     'historian',
-    'notification'
+    'notification',
+    'monitoring'
 ];
 
 
