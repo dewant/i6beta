@@ -28,9 +28,11 @@ module.exports.routes = {
 
   'GET /login' : {action : 'user/view-login'},
 
-  'GET /view' : {action : 'view/render'},
+  'GET /view' : {action : 'dashboard/index'},
 
-  'GET /view/:view' : {action : 'view/render'},
+  // 'GET /view/:view' : {action : 'view/render'},
+
+  'GET /data1' : {action : 'data1/index'},
 
 
   /***************************************************************************
