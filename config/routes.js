@@ -28,9 +28,14 @@ module.exports.routes = {
 
   'GET /login' : {action : 'user/view-login'},
 
-  'GET /view' : {action : 'view/render'},
+  'GET /view' : {action : 'dashboard/index'},
 
-  'GET /view/:view' : {action : 'view/render'},
+  // 'GET /view/:view' : {action : 'view/render'},
+
+
+  'GET /hsrg1' : {action : 'hsrg1/index'},
+
+  'GET /hsrg2' : {action : 'hsrg2/index'},
 
 
   /***************************************************************************
@@ -53,6 +58,7 @@ module.exports.routes = {
   'PUT /login' : {action : 'user/login'},
   'GET /logout' : {action : 'user/logout'},
   'GET /report' : {action : 'report/generate'},
+
   
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
