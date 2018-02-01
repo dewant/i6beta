@@ -32,7 +32,6 @@ module.exports.routes = {
 
   // 'GET /view/:view' : {action : 'view/render'},
 
-
   'GET /hsrg1' : {action : 'hsrg1/index'},
 
   'GET /hsrg2' : {action : 'hsrg2/index'},
