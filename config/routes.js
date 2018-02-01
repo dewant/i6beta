@@ -32,7 +32,15 @@ module.exports.routes = {
 
   // 'GET /view/:view' : {action : 'view/render'},
 
-  'GET /HSRG1' : {action : 'data/index'},
+  'GET /data1' : {action : 'data1/index'},
+
+  'GET /report1' : {action : 'report1/index'},
+
+  'GET /data2' : {action : 'data2/index'},
+
+  'GET /report2' : {action : 'report2/index'},
+
+
 
 
   /***************************************************************************
