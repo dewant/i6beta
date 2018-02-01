@@ -1,4 +1,5 @@
 <a class="weatherwidget-io" href="https://forecast7.com/en/n7d70109d02/cilacap/" data-label_1="CILACAP" data-label_2="WEATHER"
+<<<<<<< HEAD
     data-theme="original">WEATHER</a>
 <script>
     !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://weatherwidget.io/js/widget.min.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "weatherwidget-io-js");
@@ -168,5 +169,176 @@
             </div>
         </div>
     </div>
+=======
+  data-theme="original">WEATHER</a>
+<script>
+  !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://weatherwidget.io/js/widget.min.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "weatherwidget-io-js");
+</script>
+<br></br>
+<div class="row">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
+            class="chartjs-size-monitor">
+            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+            </div>
+            <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+            </div>
+          </div>
+          <canvas id="chart-12" class="chart chart-bar chartjs-render-monitor" height="175" style="display: block; height: 140px; width: 466px;"
+            width="582"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="chart-wrapper">
+          <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
+            class="chartjs-size-monitor">
+            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+            </div>
+            <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+              <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+            </div>
+          </div>
+          <canvas id="chart-12" class="chart chart-bar chartjs-render-monitor" height="175" style="display: block; height: 140px; width: 466px;"
+            width="582"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-7">
+    <div class="card">
+      <div class="card-header">
+        <i class="icon-check"></i>Data PLC
+        <ul class="nav nav-tabs float-right" role="tablist">
+          <li class="nav-item">
+            <a tab="" class="nav-link active" data-toggle="tab" href="#hsrg1" role="tab">HSRG 1</a>
+          </li>
+          <li class="nav-item">
+            <a tab="" class="nav-link" data-toggle="tab" href="#hsrg2" role="tab">HSRG 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body p-0">
+        <div class="tab-content">
+          <div class="tab-pane active" id="hsrg1">
+            <table class="table table-hover table-align-middle mb-0">
+              <thead>
+                <tr>
+                  <th>Gas</th>
+                  <th>Data</th>
+                  <th>Presentase</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CO</td>
+                  <td>{{tags.hrsg1.CO.value.toFixed(2)}}</td>
+                </tr>
+                <tr>
+                  <td>CO2</td>
+                  <td>{{tags.hrsg1.CO2.value.toFixed(2)}}</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>FLOW</td>
+                  <td>{{tags.hrsg1.FLOW.value.toFixed(2)}}</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>NOX</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>O2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>OPACITY</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DUST</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SO2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="hsrg2">
+            <table class="table table-hover mb-0">
+              <thead>
+                <tr>
+                  <th>Gas</th>
+                  <th>Data</th>
+                  <th>Presentase</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CO</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CO2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>FLOW</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>NOX</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>O2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>OPACITY</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DUST</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SO2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 993790b3bb17a837cf1abd996164eded751c8452
 </div>
 </div>
