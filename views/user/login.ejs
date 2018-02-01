@@ -68,13 +68,11 @@
           </div>
           <div class="card text-white  py-5 d-md-down-none" style="width:44%">
             <div class="card-body text-center">
-                <!-- <img src="/img/logo.png" alt="" srcset="" style="width:100%"> -->
-              
+              <img src="/img/Logoo.png" alt="" srcset="" style="width:50%">
+
               <div>
-                <h2>i6</h2>
-                <p>Adalah aplikasi berbasis web yang digodhog untuk sistem monitoring, data logging, reporting, notification.
-                  Semua bekerja secara realtime.</p>
-                  <button type="button" class="btn btn-primary active mt-3">Register Now!</button>
+                <p style="color:black;" Belum memiliki akun?></p>
+                <button type="button" class="btn btn-primary active mt-3">Register Now!</button>
               </div>
             </div>
           </div>
@@ -91,36 +89,36 @@
   <script src="node_modules/vue-resource/dist/vue-resource.min.js"></script>
 
   <script>
-    $(document).ready(()=>{
+    $(document).ready(() => {
       var app_login = new Vue({
         el: '#form_login',
         data: {
-          emailAddress : 'user@i6.io',
-          password : 'user1234',
-          error : false,
-          error_message : '<span class="text-danger">Login is incorrect!</span>'
+          emailAddress: 'user@i6.io',
+          password: 'user1234',
+          error: false,
+          error_message: '<span class="text-danger">Login is incorrect!</span>'
         },
         methods: {
           login: function () {
-            
-              let payload = {
-                emailAddress : this.emailAddress,
-                password : this.password
-              };
 
-              // send POST request
-              this.$http.put('/login', payload)
-              .then(response=>{
+            let payload = {
+              emailAddress: this.emailAddress,
+              password: this.password
+            };
+
+            // send POST request
+            this.$http.put('/login', payload)
+              .then(response => {
                 //on success                
                 window.location.href = window.location.origin;
-              }, response=>{
+              }, response => {
                 //on error
                 this.error = true;
                 //this.password = '';
                 console.log(response);
               });
           }
-        }      
+        }
       })
     });
   </script>
