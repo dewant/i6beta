@@ -34,8 +34,6 @@ module.exports.routes = {
 
   'GET /hsrg1' : {action : 'hsrg1/index'},
 
-  'GET /report1' : {action : 'report1/index'},
-
   'GET /hsrg2' : {action : 'hsrg2/index'},
 
   /***************************************************************************
