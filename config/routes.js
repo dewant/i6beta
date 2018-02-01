@@ -32,9 +32,13 @@ module.exports.routes = {
 
   // 'GET /view/:view' : {action : 'view/render'},
 
+<<<<<<< HEAD
   'GET /hsrg1' : {action : 'hsrg1/index'},
 
   'GET /hsrg2' : {action : 'hsrg2/index'},
+=======
+  'GET /HSRG1' : {action : 'data/index'},
+>>>>>>> dfda62763106ed0eb63a7146bbbb399a97abacd3
 
 
   /***************************************************************************
