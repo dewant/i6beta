@@ -2,6 +2,7 @@ module.exports =
 {
   name : 'blok2',
   items : [
+
     {
       "name": "CO",
       "address": "DB10,REAL304",
@@ -13,19 +14,19 @@ module.exports =
       "out_max": 100,
       "out_min": 0,
       "hihi": null,
-      "hi": null,
+      "hi": 100,
       "lo": null,
       "lolo": null
     },
     {
-      "name": "CO_RAW",
+      "name": "FLOW_RAW",
       "address": "DB10,INT302",
       "eu": null,
       "description": "CO - Raw value",
       "scaling": false,
       "in_max": 100,
       "in_min": 0,
-      "out_max": 100,
+      "out_max": 1000,
       "out_min": 0,
       "hihi": null,
       "hi": null,
@@ -133,7 +134,7 @@ module.exports =
       "out_max": 5,
       "out_min": 0,
       "hihi": null,
-      "hi": null,
+      "hi": 5,
       "lo": null,
       "lolo": null
     },
@@ -163,7 +164,7 @@ module.exports =
       "out_max": 100,
       "out_min": 0,
       "hihi": null,
-      "hi": 20,
+      "hi": 100,
       "lo": null,
       "lolo": null
     },
@@ -193,7 +194,7 @@ module.exports =
       "out_max": 100,
       "out_min": 0,
       "hihi": null,
-      "hi": null,
+      "hi": 100,
       "lo": null,
       "lolo": null
     },
@@ -223,7 +224,7 @@ module.exports =
       "out_max": 100,
       "out_min": 0,
       "hihi": null,
-      "hi": null,
+      "hi": 100,
       "lo": null,
       "lolo": null
     },
