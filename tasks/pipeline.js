@@ -78,14 +78,13 @@ var jsFilesToInject = [
   'node_modules/tether/dist/js/tether.min.js',
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/pace/pace.min.js',
+  'node_modules/chart.js/dist/Chart.bundle.min.js',
 
   //Angular
   // 'node_modules/angular/angular.min.js',
   // 'node_modules/angular-route/angular-route.min.js',
   // 'node_modules/angular-breadcrumb/dist/angular-breadcrumb.min.js',
 
-  //Chart js
-  'node_modules/chart.js/Chart.min.js',
 
 
   // Bring in `.js` files for any other client-side JavaScript dependencies.

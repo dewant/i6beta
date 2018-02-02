@@ -201,45 +201,28 @@
                 <tr>
                   <td>CO</td>
                   <td><i class="fa fa-exclamation" v-if="tags.hrsg1.CO.quality=='BAD'"></i>{{tags.hrsg1.CO.value}}</td>
+                  <td>{{tags.hrsg1.CO.persen}}%</td>
                 </tr>
                 <tr>
                   <td>CO2</td>
+                  <td>{{tags.hrsg1.CO2.value}}%</td>
                   <td>{{tags.hrsg1.CO2.persen}}%</td>
-                  <td>
-                    <div class="progress progress-sm my-2">
-                      <div class="progress-bar bg-info" aria-valuenow="{{tags.hrsg1.CO.value }}" aria-valuemin="0" aria-valuemax="100">
-                        {{tags.hrsg1.CO2.out_max}}</div>
-                    </div>
-                  </td>
                 </tr>
                 <tr>
                   <td>FLOW</td>
-                  <td>{{tags.hrsg1.CO2.value }}</td>
-                  <td>
-                    <div class="progress progress-sm my-2">
-                      <div class="progress-bar bg-info" style="width:50 " aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </td>
+                  <td>{{tags.hrsg1.FLOW.value }}</td>
+                  <td>{{tags.hrsg1.FLOW.persen.toFixed(2)}}%</td>
                   </td>
                 </tr>
                 <tr>
                   <td>NOX</td>
                   <td>{{tags.hrsg1.NOX.value }}</td>
-                  <td> <div class="progress progress-sm my-2">
-                    <div class="progress-bar bg-info" aria-valuenow="{{tags.hrsg1.CO.value }}" aria-valuemin="0" aria-valuemax="100">
-                      {{tags.hrsg1.CO.value}}</div>
-                  </div>
-                </td>
+                  <td>{{tags.hrsg1.NOX.persen }}</td>
                 </tr>
                 <tr>
                   <td>O2</td>
                   <td>{{tags.hrsg1.O2.value }}</td>
-                  <td>
-                    <div class="progress progress-sm my-2">
-                      <div class="progress-bar bg-info" aria-valuenow="{{tags.hrsg1.CO.value }}" aria-valuemin="0" aria-valuemax="100">
-                        {{tags.hrsg1.CO.value}}</div>
-                    </div>
-                  </td>
+                  <td>{{tags.hrsg1.CO.persen}}</td>
                 </tr>
                 <tr>
                   <td>OPACITY</td>
