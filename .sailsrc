@@ -4,5 +4,11 @@
   },
   "hooks":{
     "grunt" : false
-  }
+  },
+  "helpers": {
+      "usageOpts": {
+        "arginStyle": "named",
+        "execStyle": "deferred"
+      }
+    }
 }
