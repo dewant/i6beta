@@ -53,13 +53,28 @@ module.exports = {
         end = time_end.valueOf();
 
         break;
-      case 'daily' :
 
+      case 'daily' :
+      time_start = moment(inputs.date, 'YYYY-MM-DD').toDate();
+      time_end = moment(time_start).add(1, 'days');
+
+      start = time_start.valueOf();
+      end = time_end.valueOf();
 
         break;
       case 'weekly' :
+      time_start = moment(inputs.date, 'YYYY-MM-DD').toDate();
+      time_end = moment(time_start).add(1, 'weeks');
+
+      start = time_start.valueOf();
+      end = time_end.valueOf();
         break;
       case 'monthly':
+      time_start = moment(inputs.date, 'YYYY-MM').toDate();
+      time_end = moment(time_start).add(1, 'weeks');
+
+      start = time_start.valueOf();
+      end = time_end.valueOf();
         break;
     }
 
@@ -75,11 +90,6 @@ module.exports = {
       record_data.waktu = moment(new Date(record.createdAt)).format('mm:ss');
 
     });
-
-
-    // console.log(record_data);
-
-
 
     // All done.
     return exits.success(record_data);

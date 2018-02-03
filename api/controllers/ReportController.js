@@ -22,7 +22,9 @@ module.exports = {
 
         var record_data = await sails.helpers.getReportData(query);
 
-        var template_path = path.join(process.cwd(), 'user_data', 'template_hourly.xlsx');
+        var template_path = path.join(process.cwd(), 'user_data', 'template_' + query.type + '.xlsx');
+        
+
 
         var output_cache = path.join(process.cwd(),'user_data', 'temp.xlsx')
 
