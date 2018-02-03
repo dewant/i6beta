@@ -1,13 +1,13 @@
 module.exports = {
 
     attributes: {
-        CO : 'string',
-        CO2 : 'string',
-        FLOW :'string',
-        NOX : 'string',
-        O2 : 'string',
-        OPACITY : 'string',
-        DUST : 'string',
-        SO2 :'string'
+        co : 'string',
+        co2 : 'string',
+        flow :'string',
+        nox : 'string',
+        o2 : 'string',
+        opacity : 'string',
+        dust : 'string',
+        so2 :'string'
     }
 }
