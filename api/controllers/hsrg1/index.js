@@ -1,4 +1,4 @@
-module.exports = function(req, res){
+module.exports = async function(req, res){
     res.view();
     
     }

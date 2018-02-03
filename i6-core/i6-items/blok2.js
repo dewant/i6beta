@@ -19,14 +19,14 @@ module.exports =
       "lolo": null
     },
     {
-      "name": "FLOW_RAW",
+      "name": "CO_RAW",
       "address": "DB10,INT302",
       "eu": null,
       "description": "CO - Raw value",
       "scaling": false,
       "in_max": 100,
       "in_min": 0,
-      "out_max": 1000,
+      "out_max": 100,
       "out_min": 0,
       "hihi": null,
       "hi": null,
